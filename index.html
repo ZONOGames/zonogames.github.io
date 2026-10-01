@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+  ZONOGames developer website - the page the Google Play listing's "Website" field points at.
+  Its main job is to sit at the domain root next to app-ads.txt, which AdMob crawls from there
+  (see ADS_SETUP.md). Hosted on GitHub Pages; upload this folder's files to the root of the
+  <name>.github.io repository.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZONOGames</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --rule: #e0e0e0;
+    --link: #1a5fb4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17181a;
+      --text: #e8e8e8;
+      --muted: #a0a0a0;
+      --rule: #34363a;
+      --link: #78aeed;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17181a;
+    --text: #e8e8e8;
+    --muted: #a0a0a0;
+    --rule: #34363a;
+    --link: #78aeed;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    margin: 0 0 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+  }
+  h2 {
+    font-size: 1.25em;
+    line-height: 1.3;
+    margin: 36px 0 12px;
+  }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 24px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>ZONOGames</h1>
+
+  <h2>Word Sandbox</h2>
+  <p>A word game for Android.</p>
+  <ul>
+    <li><a href="https://sites.google.com/view/zonogames-wordsandbox-privacy">Privacy Policy</a></li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:zonogamesinquiries@gmail.com">zonogamesinquiries@gmail.com</a></p>
+
+</main>
+</body>
+</html>
